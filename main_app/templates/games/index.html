@@ -5,13 +5,14 @@
 
 {% for game in games %}
   <div class="card">
-    <a href="/games/{{games.id}}"></a>
+    <a href="/games/{{games.id}}">
       <div class="card-content">
         <span class="card-title">{{ game.name }}</span>
         <p>Console: {{ game.console }}</p>
         <p>Description: {{ game.description }}</p>
         <p>Release date: {{ game.release_date }}</p>
       </div>
+    </a>
   </div>
 {% endfor %}
 
